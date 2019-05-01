@@ -4,3 +4,5 @@ function sayHello(name) {
 }
 
 sayHello("Gideon");
+
+console.log(module);
