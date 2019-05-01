@@ -1,3 +1,7 @@
+// (function(exports, require, module, __filename, __dirname) {
+console.log("__dirname:", __dirname);
+console.log("__filename:", __filename);
+
 var url = "http://mylogger.io/log";
 
 function log(message) {
@@ -7,3 +11,4 @@ function log(message) {
 
 module.exports = log;
 module.exports.endPoint = url;
+// });
