@@ -1,3 +1,9 @@
+// Path module test
+const path = require("path");
+
+const pathObj = path.parse(__filename);
+console.log("pathObj:", pathObj);
+
 // Load logger module
 const log = require("./logger");
 
