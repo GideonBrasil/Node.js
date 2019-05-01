@@ -1,3 +1,12 @@
+// take a look at os module
+const os = require("os");
+
+const totalMemory = os.totalmem();
+const freeMemory = os.freemem();
+
+console.log("Total Memory: " + totalMemory);
+console.log(`Free Memory: ${freeMemory}`);
+
 // Path module test
 const path = require("path");
 
