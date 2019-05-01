@@ -1,8 +1,8 @@
 // Load logger module
-const logger = require("./logger");
+const log = require("./logger");
 
 // console.log("logger module", logger);
-logger.log("Hello from Gideon");
+log("Hello from Gideon");
 
 // first node hello function
 function sayHello(name) {
