@@ -2,11 +2,11 @@
 console.log("__dirname:", __dirname);
 console.log("__filename:", __filename);
 
-const EventEmmiter = require("events");
+const EventEmitter = require("events");
 
 var url = "http://mylogger.io/log";
 
-class Logger extends EventEmmiter {
+class Logger extends EventEmitter {
   log(message) {
     // Send an HTTP request
     console.log("http message:", message);

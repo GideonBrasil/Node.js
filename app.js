@@ -1,5 +1,5 @@
 // take a look at the events module
-const EventEmmiter = require("events");
+const EventEmitter = require("events");
 
 const Logger = require("./logger");
 const logger = new Logger();
