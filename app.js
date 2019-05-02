@@ -1,3 +1,14 @@
+// take a look at the events module
+const EventEmmiter = require("events");
+const emitter = new EventEmmiter();
+
+// Register a listener
+emitter.on("messageLogged", function() {
+  console.log("Listener called");
+});
+
+emitter.emit("messageLogged");
+
 // take a look at the fs module
 const fs = require("fs");
 
