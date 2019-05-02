@@ -1,13 +1,15 @@
 // take a look at the events module
 const EventEmmiter = require("events");
-const emitter = new EventEmmiter();
+
+const Logger = require("./logger");
+const logger = new Logger();
 
 // Register a listener
-emitter.on("messageLogged", arg => {
+logger.on("messageLogged", arg => {
   console.log("Listener called", arg);
 });
 
-emitter.emit("messageLogged", { id: 1, url: "http://" });
+logger.log("message you boi");
 
 // // take a look at the fs module
 // const fs = require("fs");
